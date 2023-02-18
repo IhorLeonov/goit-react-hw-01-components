@@ -4,7 +4,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: 1px solid rgba(224, 227, 230, 0.78);
+  border: 1px solid var(--bd-color);
   border-radius: 5px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -19,7 +19,7 @@
 }
 
 .theadItem {
-  border: 1px solid rgba(224, 227, 230, 0.78);
+  border: 1px solid var(--bd-color);
 }
 
 .theadColumn {
@@ -41,7 +41,7 @@
   color: gray;
 }
 .tbodyItem:nth-child(2n) {
-  background-color: rgba(233, 236, 240, 0.78);
+  background-color: var(--bg-color);
 }
 
 .tbodyItem:last-child .tbodyColumn:first-child {

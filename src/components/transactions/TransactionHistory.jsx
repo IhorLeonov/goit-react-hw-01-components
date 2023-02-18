@@ -1,26 +1,34 @@
 import PropTypes from 'prop-types';
-import css from './TransactionHistory.module.css';
+// import css from './TransactionHistory.module.css';
+import {
+  TableTrans,
+  TheadTrans,
+  TheadItem,
+  TheadColumn,
+  TbodyItem,
+  TbodyColumn,
+} from 'components/transactions/Transactions.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (
-    <table className={css.tableTrans}>
-      <thead className={css.theadTrans}>
-        <tr className={css.theadItem}>
-          <th className={css.theadColumn}>Type</th>
-          <th className={css.theadColumn}>Amount</th>
-          <th className={css.theadColumn}>Currency</th>
-        </tr>
-      </thead>
-      <tbody className={css.tbodyTrans}>
+    <TableTrans>
+      <TheadTrans>
+        <TheadItem>
+          <TheadColumn>Type</TheadColumn>
+          <TheadColumn>Amount</TheadColumn>
+          <TheadColumn>Currency</TheadColumn>
+        </TheadItem>
+      </TheadTrans>
+      <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <tr key={id} className={css.tbodyItem}>
-            <td className={css.tbodyColumn}>{type}</td>
-            <td className={css.tbodyColumn}>{amount}</td>
-            <td className={css.tbodyColumn}>{currency}</td>
-          </tr>
+          <TbodyItem key={id}>
+            <TbodyColumn>{type}</TbodyColumn>
+            <TbodyColumn>{amount}</TbodyColumn>
+            <TbodyColumn>{currency}</TbodyColumn>
+          </TbodyItem>
         ))}
       </tbody>
-    </table>
+    </TableTrans>
   );
 };
 
