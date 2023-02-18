@@ -10,25 +10,25 @@ export const Profile = ({
 }) => {
   return (
     <div className={css.profile}>
-      <div className="description">
-        <img src={avatar} alt={username} className="avatar" />
-        <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
-        <p className="location">{location}</p>
+      <div className={css.profileDesc}>
+        <img src={avatar} alt={username} className={css.profileAvatar} />
+        <p className={css.profileName}>{username}</p>
+        <p className={css.profileInfo}>@{tag}</p>
+        <p className={css.profileInfo}>{location}</p>
       </div>
 
-      <ul className="stats">
-        <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{followers}</span>
+      <ul className={css.statsList}>
+        <li className={css.statsItem}>
+          <span className={css.statsLabel}>Followers</span>
+          <span className={css.statsQuantity}>{followers}</span>
         </li>
-        <li>
-          <span className="label">Views</span>
-          <span className="quantity">{views}</span>
+        <li className={css.statsItem}>
+          <span className={css.statsLabel}>Views</span>
+          <span className={css.statsQuantity}>{views}</span>
         </li>
-        <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{likes}</span>
+        <li className={css.statsItem}>
+          <span className={css.statsLabel}>Likes</span>
+          <span className={css.statsQuantity}>{likes}</span>
         </li>
       </ul>
     </div>
@@ -40,5 +40,5 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.object.isRequired,
+  stats: PropTypes.shape({}),
 };

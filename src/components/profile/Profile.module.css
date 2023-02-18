@@ -1,1 +1,71 @@
+.profile {
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
+.profileDesc {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+  border: 1px solid rgba(224, 227, 230, 0.78);
+  border-bottom: none;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.profileAvatar {
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid rgba(224, 227, 230, 0.78);
+}
+
+.profileName {
+  margin-top: 40px;
+  font-size: 28px;
+}
+
+.profileInfo {
+  margin-top: 10px;
+  font-size: 18px;
+  color: gray;
+}
+
+.statsList {
+  display: flex;
+  border: 1px solid rgba(224, 227, 230, 0.78);
+  background-color: rgba(233, 236, 240, 0.78);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.statsItem {
+  flex-basis: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+  border-right: 1px solid rgba(224, 227, 230, 0.78);
+}
+
+.statsItem:last-child {
+  border-right: none;
+}
+
+.statsLabel {
+  display: block;
+  font-size: 16px;
+  color: gray;
+}
+
+.statsQuantity {
+  display: block;
+  font-size: 18px;
+  font-weight: 700;
+}
