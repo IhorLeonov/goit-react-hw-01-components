@@ -7,7 +7,7 @@ import {
   TheadColumn,
   TbodyItem,
   TbodyColumn,
-} from 'components/transactions/Transactions.styled';
+} from 'components/Transactions/Transactions.styled';
 
 export const TransactionHistory = ({ items }) => {
   return (

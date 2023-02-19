@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const TableTrans = styled.table`
   margin-top: 40px;
@@ -6,18 +6,18 @@ export const TableTrans = styled.table`
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  border: ${props => `1px solid ${props.theme.colors.bd}`};
   border-radius: 5px;
+  border: ${props => `1px solid ${props.theme.colors.bd}`};
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   width: 600px;
 `;
 
 export const TheadTrans = styled.thead`
-  background-color: ${props => props.theme.colors.font};
   color: #fff;
   text-transform: uppercase;
   font-size: 14px;
+  background-color: ${props => props.theme.colors.font};
 `;
 
 export const TheadItem = styled.tr`
@@ -37,7 +37,6 @@ export const TheadColumn = styled.th`
 
 export const TbodyItem = styled.tr`
   color: ${props => props.theme.colors.font};
-
   :nth-child(2n) {
     background-color: ${props => props.theme.colors.bg};
   }

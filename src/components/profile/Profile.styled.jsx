@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 
 export const ProfileBox = styled.div`
   margin-top: 40px;
@@ -14,10 +14,10 @@ export const ProfileDesc = styled.div`
   padding-top: 40px;
   padding-bottom: 40px;
   text-align: center;
-  border: ${props => `1px solid ${props.theme.colors.bd}`};
   border-bottom: none;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+  border: ${props => `1px solid ${props.theme.colors.bd}`};
 `;
 
 export const ProfileAvatar = styled.img`
@@ -42,10 +42,10 @@ export const ProfileInfo = styled.p`
 
 export const StatsList = styled.ul`
   display: flex;
-  border: ${props => `1px solid ${props.theme.colors.bd}`};
-  background-color: ${props => props.theme.colors.bg};
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  border: ${props => `1px solid ${props.theme.colors.bd}`};
+  background-color: ${props => props.theme.colors.bg};
 `;
 
 export const StatsItem = styled.li`

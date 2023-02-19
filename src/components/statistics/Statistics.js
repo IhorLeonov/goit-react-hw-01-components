@@ -7,7 +7,7 @@ import {
   StatItem,
   StatLabel,
   StatPercentage,
-} from 'components/statistics/Statistics.styled';
+} from 'components/Statistics/Statistics.styled';
 import { getRandomHexColor } from 'components/utils/getRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {
