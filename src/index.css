@@ -8,7 +8,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+///
 :root {
   --bg-color: rgba(233, 236, 240, 0.78);
   --bd-color: rgba(224, 227, 230, 0.78);
