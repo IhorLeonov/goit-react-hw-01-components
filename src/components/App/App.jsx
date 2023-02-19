@@ -3,12 +3,12 @@ import transData from 'data/transactions.json';
 import friendsData from 'data/friends.json';
 import userData from 'data/user.json';
 
-import { Profile } from 'components/Profile/Profile';
-import { Statistics } from 'components/Statistics/Statistics';
-import { FriendList } from 'components/FriendList/FriendList';
-import { TransactionHistory } from 'components/Transactions/TransactionHistory';
+import { Profile } from 'components/profile/Profile';
+import { Statistics } from 'components/statistics/Statistics';
+import { FriendList } from 'components/friendList/FriendList';
+import { TransactionHistory } from 'components/transactions/TransactionHistory';
 import { GlobalStyle } from 'components/constants/GlobalStyle';
-import { Layout } from 'components/Layout/Layout';
+import { Layout } from 'components/layout/Layout';
 
 export const App = () => {
   return (

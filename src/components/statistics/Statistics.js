@@ -7,14 +7,13 @@ import {
   StatItem,
   StatLabel,
   StatPercentage,
-} from 'components/Statistics/Statistics.styled';
+} from 'components/statistics/Statistics.styled';
 import { getRandomHexColor } from 'components/utils/getRandomHexColor';
 
 export const Statistics = ({ title, stats }) => {
   return (
     <StatSection>
       {title && <StatTitle>{title}</StatTitle>}
-
       <StatList>
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id}>

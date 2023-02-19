@@ -6,7 +6,7 @@ import {
   FriendStatus,
   FriendAva,
   FriendName,
-} from 'components/FriendListItem/FriendListItem.styled';
+} from 'components/friendListItem/FriendListItem.styled';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
