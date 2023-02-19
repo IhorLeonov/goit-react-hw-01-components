@@ -13,7 +13,7 @@ import { getRandomHexColor } from 'components/utils/getRandomHexColor';
 export const Statistics = ({ title, stats }) => {
   return (
     <StatSection>
-      {title && <StatTitle>Upload stats</StatTitle>}
+      {title && <StatTitle>{title}</StatTitle>}
 
       <StatList>
         {stats.map(({ id, label, percentage }) => (

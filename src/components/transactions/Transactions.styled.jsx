@@ -26,10 +26,11 @@ export const TheadItem = styled.tr`
 
 export const TheadColumn = styled.th`
   padding: 8px;
-  &:last-child {
+
+  :last-child {
     border-top-right-radius: 3px;
   }
-  &:first-child {
+  :first-child {
     border-top-left-radius: 3px;
   }
 `;
@@ -37,23 +38,27 @@ export const TheadColumn = styled.th`
 export const TbodyItem = styled.tr`
   color: ${props => props.theme.colors.font};
 
-  &:nth-child(2n) {
+  :nth-child(2n) {
     background-color: ${props => props.theme.colors.bg};
-  }
-
-  &:last-child .TbodyColumn:first-child {
-    border-bottom-left-radius: 3px;
-  }
-
-  &:last-child .tbodyColumn:last-child {
-    border-bottom-right-radius: 3px;
   }
 `;
 
 export const TbodyColumn = styled.td`
   padding: 8px;
 
-  &:first-child {
+  :first-child {
     text-transform: capitalize;
   }
 `;
+
+// :last-child {
+//   TbodyColumn:first-child {
+//     border-bottom-left-radius: 3px;
+//   }
+// }
+
+// :last-child {
+//   TbodyColumn:last-child {
+//     border-bottom-right-radius: 3px;
+//   }
+// }
