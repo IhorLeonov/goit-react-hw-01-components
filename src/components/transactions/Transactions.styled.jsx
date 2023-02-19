@@ -60,4 +60,5 @@ export const TbodyColumn = styled.td`
 //   TbodyColumn:last-child {
 //     border-bottom-right-radius: 3px;
 //   }
+//////////////
 // }
