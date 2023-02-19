@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types';
-// import css from './FriendListItem.module.css';
-import { iconSize } from 'components/constants';
+import { iconSize } from 'components/constants/iconSize';
 import {
   FriendItem,
   FriendStatus,
