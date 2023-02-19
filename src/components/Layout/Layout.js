@@ -1,4 +1,4 @@
-import { Container } from 'components/layout/Layout.styled';
+import { Container } from 'components/Layout/Layout.styled';
 
 export const Layout = ({ children }) => {
   return (

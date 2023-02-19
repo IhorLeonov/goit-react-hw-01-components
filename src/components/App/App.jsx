@@ -8,7 +8,7 @@ import { Statistics } from 'components/statistics/Statistics';
 import { FriendList } from 'components/friendList/FriendList';
 import { TransactionHistory } from 'components/transactions/TransactionHistory';
 import { GlobalStyle } from 'components/constants/GlobalStyle';
-import { Layout } from 'components/layout/Layout';
+import { Layout } from 'components/Layout/Layout';
 
 export const App = () => {
   return (
