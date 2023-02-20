@@ -41,7 +41,7 @@ export const TbodyItem = styled.tr`
     background-color: ${props => props.theme.colors.bg};
   }
 
-  :last-child {
+  :nth-child(${props => props.lastItem}) {
     td:first-child {
       border-bottom-left-radius: 3px;
     }
@@ -58,3 +58,19 @@ export const TbodyColumn = styled.td`
     text-transform: capitalize;
   }
 `;
+
+// export const TbodyItem = styled.tr`
+//   color: ${props => props.theme.colors.font};
+//   :nth-child(2n) {
+//     background-color: ${props => props.theme.colors.bg};
+//   }
+
+//   :last-child {
+//     td:first-child {
+//       border-bottom-left-radius: 3px;
+//     }
+//     td:last-child {
+//       border-bottom-right-radius: 3px;
+//     }
+//   }
+// `;

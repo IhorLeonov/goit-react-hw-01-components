@@ -21,7 +21,7 @@ export const TransactionHistory = ({ items }) => {
       </TheadTrans>
       <tbody>
         {items.map(({ id, type, amount, currency }) => (
-          <TbodyItem key={id}>
+          <TbodyItem key={id} lastItem={items.length}>
             <TbodyColumn>{type}</TbodyColumn>
             <TbodyColumn>{amount}</TbodyColumn>
             <TbodyColumn>{currency}</TbodyColumn>
